@@ -18,13 +18,12 @@
 
 ## 使用
 
-1. 在 [Releases](https://github.com/ChrisChan13/Genshin-Impact-Lyre/releases) 中下载 ***Latest*** 版本 `Genshin-Impact-Lyre.exe` 以及 `midi.zip` 压缩包并解压
-2. 将 `Genshin-Impact-Lyre.exe` 以及解压后的 `midi 文件夹` 放置于同一目录下
-3. 双击 `Genshin-Impact-Lyre.exe` 以管理员身份运行
-4. 在展示的 MIDI 列表中，输入将要演奏的 MIDI 文件序号并回车确认
-5. 切换至原神游戏窗口，打开 风物之诗琴/镜花之琴
-6. 按下 `Enter` 键开始演奏，按下 `Esc` 键可终止演奏
-7. 循环 4~6 步骤，直至退出脚本
+1. 在 [Releases](https://github.com/ChrisChan13/Genshin-Impact-Lyre/releases) 中下载 ***Latest*** 版本 `Genshin-Impact-Lyre.zip` 压缩包并解压
+2. 双击 `Genshin-Impact-Lyre.exe` 以管理员身份运行
+3. 在展示的 MIDI 列表中，输入将要演奏的 MIDI 文件序号并回车确认
+4. 切换至原神游戏窗口，打开 风物之诗琴/镜花之琴
+5. 按下 `Enter` 键开始演奏，按下 `Esc` 键可终止演奏
+6. 循环 3~5 步骤，直至退出脚本
 
 > PS：将自己制作的 MIDI 文件放入 `/midi` 文件夹下即可选择演奏自己制作的 MIDI 曲谱
 
@@ -38,8 +37,6 @@
   3. 双击 `install.bat` 安装依赖
   4. 双击 `start.bat` 运行脚本
   5. 双击 `build.bat` 打包脚本（需要安装 `pyinstaller`）
-  
-  > PS：在项目源码中 `/midi` 目录下不包含 MIDI 文件，可在 [Releases](https://github.com/ChrisChan13/Genshin-Impact-Lyre/releases) 中下载 `midi.zip` 压缩包解压
 
 </details>
 <br>
