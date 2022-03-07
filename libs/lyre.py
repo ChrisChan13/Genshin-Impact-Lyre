@@ -67,3 +67,13 @@ class Lyre():
   # TODO: 自动调音
   # def autoTune(self) -> None:
   #   pass
+
+  # 重置
+  def reset(self):
+    playingNotes = self.playingNotes.copy()
+    # 清空未释放按键
+    for note in playingNotes:
+      self.offNote(note)
+    self.isWaitForSignal = False
+    self.shouldPlayBegin = False
+    self.playingNotes = set()

@@ -21,11 +21,6 @@ class PlayThread(Thread):
   def run(self):
     while not self.shouldExit:
       try:
-        # 重置
-        self.lyre.isWaitForSignal = False
-        self.lyre.shouldPlayBegin = False
-        self.lyre.playingNotes = set()
-
         midiFiles = self.midi.getMidiFiles()
         midiSize = len(midiFiles)
         if midiSize == 0:
@@ -64,6 +59,7 @@ class PlayThread(Thread):
                 self.lyre.playNote(note)
               if msg.type == 'note_off':
                 self.lyre.offNote(note)
+        self.lyre.reset()
         print('\n演奏结束！')
         printSplitLine()
       except Exception as error:
